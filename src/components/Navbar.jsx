@@ -13,11 +13,7 @@ const Navbar = () => {
   useEffect(() => {
     const handleScroll = () => {
       const scrollTop = window.scrollY;
-      if (scrollTop > 100) {
-        setScrolled(true);
-      } else {
-        setScrolled(false);
-      }
+      setScrolled(scrollTop > 100);
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -27,9 +23,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`${
-        styles.paddingX
-      } w-full flex items-center py-5 fixed top-0 z-20 ${
+      className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 ${
         scrolled ? "bg-primary" : "bg-transparent"
       }`}
     >
@@ -43,9 +37,9 @@ const Navbar = () => {
           }}
         >
           <img src={logo} alt='logo' className='w-9 h-9 object-contain' />
-          <p className='text-white text-[18px] font-bold cursor-pointer flex '>
-            Huzaif &nbsp;
-            <span className='sm:block hidden'> | Devxora</span>
+          <p className='text-white text-[18px] font-bold cursor-pointer flex'>
+            Preyash Jain&nbsp;
+            <span className='sm:block hidden'> | Portfolio</span>
           </p>
         </Link>
 
