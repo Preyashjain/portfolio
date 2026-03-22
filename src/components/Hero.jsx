@@ -49,8 +49,8 @@ const Hero = () => {
             Hi, I'm <span className="text-[#915EFF]">Preyash</span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            I build intelligent apps with Flutter and Python <br />
-            and love solving real-world problems with tech.
+            Data Science & AI Enthusiast | LLM Engineer | Full-Stack Developer <br />
+            Building intelligent systems that transform data into insights.
           </p>
 
           {/* ✅ Resume Download Button with Dropdown */}
