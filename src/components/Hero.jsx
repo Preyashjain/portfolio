@@ -10,14 +10,14 @@ const Hero = () => {
 
   const handleResumeDownload = (language) => {
     const resumeFile = language === "english" 
-      ? "/resume/Preyash_Resume.pdf" 
-      : "/resume/Preyash_Deutschresume.pdf";
+      ? "/resume/Preyash_englishresume.pdf" 
+      : "/resume/Preyashjain_deutschresume.pdf";
     
     const link = document.createElement("a");
     link.href = resumeFile;
     link.download = language === "english" 
-      ? "Preyash_Resume.pdf" 
-      : "Preyash_Deutschresume.pdf";
+      ? "Preyash_englishresume.pdf" 
+      : "Preyashjain_deutschresume.pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
